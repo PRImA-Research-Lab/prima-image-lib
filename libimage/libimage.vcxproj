@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{859B92A2-E3C7-47EA-A6E6-A332A267EA72}</ProjectGuid>
+    <RootNamespace>libimage</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./lib/iconv/include;../libdla/source;../libextra/source;./lib/libtiff/include;./test;./source;./lib/opencv/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libtiff.lib;opencv_core246d.lib;opencv_highgui246d.lib;opencv_imgproc246d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib/libtiff/lib;./lib/opencv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./lib/iconv/include;../libdla/source;../libextra/source;./lib/libtiff/include;./test;./source;./lib/opencv/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tiff.lib;opencv_core310d.lib;opencv_highgui310d.lib;opencv_imgproc310d.lib;opencv_imgcodecs310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib/libtiff4/lib;./lib/opencv/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>Updating Version Header...</Message>
+      <Command>.\VerHeader "$(ProjectName).rc" version.info</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./lib/iconv/include;../libdla/source;../libextra/source;./lib/libtiff/include;./test;./source;./lib/opencv/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libtiff.lib;opencv_core246.lib;opencv_highgui246.lib;opencv_imgproc246.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib/libtiff/lib;./lib/opencv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Archiving and Incrementing Build...</Message>
+      <Command>.\VerCopy "$(TargetPath)" "Z:\Our Software\builds\$(ProjectName)\$(Configuration)"
+.\RCStamp "$(ProjectName).rc" *.*.+.*
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>Updating Version Header...</Message>
+      <Command>.\VerHeader "$(ProjectName).rc" version.info</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./lib/iconv/include;../libdla/source;../libextra/source;./lib/libtiff4/include;./test;./source;./lib/opencv/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tiff.lib;opencv_core310.lib;opencv_highgui310.lib;opencv_imgproc310.lib;opencv_imgcodecs310.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib/libtiff4/lib;./lib/opencv/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Message>Archiving and Incrementing Build...</Message>
+      <Command>.\VerCopy "$(TargetPath)" "Z:\Our Software\builds\$(ProjectName)\64bit\$(Configuration)"
+.\RCStamp "$(ProjectName).rc" *.*.+.*
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="misc\source\AdaptiveWienerFilter-master\WienerFilter.cpp" />
+    <ClCompile Include="source\AdaptiveBinariser.cpp" />
+    <ClCompile Include="source\BiLevelImage.cpp" />
+    <ClCompile Include="source\ConnCompCollection.cpp" />
+    <ClCompile Include="source\ConnectedComponent.cpp" />
+    <ClCompile Include="source\ConnectedComponents.cpp" />
+    <ClCompile Include="source\GreyScaleImage.cpp" />
+    <ClCompile Include="source\HiColorImage.cpp" />
+    <ClCompile Include="source\Histogram.cpp" />
+    <ClCompile Include="source\Image.cpp" />
+    <ClCompile Include="source\ImageReader.cpp" />
+    <ClCompile Include="source\ImageTransformer.cpp" />
+    <ClCompile Include="source\ImageWriter.cpp" />
+    <ClCompile Include="source\ProjectionProfile.cpp" />
+    <ClCompile Include="test\libimage.cpp" />
+    <ClCompile Include="source\LoColorImage.cpp" />
+    <ClCompile Include="source\OpenCvImage.cpp" />
+    <ClCompile Include="source\OpenCvImageReader.cpp" />
+    <ClCompile Include="source\OpenCvImageWriter.cpp" />
+    <ClCompile Include="source\RegionMap.cpp" />
+    <ClCompile Include="source\Run.cpp" />
+    <ClCompile Include="source\TiffImageReader.cpp" />
+    <ClCompile Include="source\TiffImageWriter.cpp" />
+    <ClCompile Include="..\libextra\source\Algorithm.cpp" />
+    <ClCompile Include="..\libextra\source\BaseException.cpp" />
+    <ClCompile Include="..\libextra\source\ExtraFileHelper.cpp" />
+    <ClCompile Include="..\libextra\source\ExtraMath.cpp" />
+    <ClCompile Include="..\libextra\source\ExtraString.cpp" />
+    <ClCompile Include="..\libextra\source\INI.cpp" />
+    <ClCompile Include="..\libextra\source\Parameter.cpp" />
+    <ClCompile Include="..\libextra\source\PointList.cpp" />
+    <ClCompile Include="..\libextra\source\ProgressMonitor.cpp" />
+    <ClCompile Include="..\libextra\source\RegionPoint.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="misc\source\AdaptiveWienerFilter-master\WienerFilter.h" />
+    <ClInclude Include="source\AdaptiveBinariser.h" />
+    <ClInclude Include="source\BiLevelImage.h" />
+    <ClInclude Include="source\ConnCompCollection.h" />
+    <ClInclude Include="source\ConnectedComponent.h" />
+    <ClInclude Include="source\ConnectedComponents.h" />
+    <ClInclude Include="source\GreyScaleImage.h" />
+    <ClInclude Include="source\HiColorImage.h" />
+    <ClInclude Include="source\Histogram.h" />
+    <ClInclude Include="source\Image.h" />
+    <ClInclude Include="source\ImageReader.h" />
+    <ClInclude Include="source\ImageTransformer.h" />
+    <ClInclude Include="source\ImageWriter.h" />
+    <ClInclude Include="source\LoColorImage.h" />
+    <ClInclude Include="source\OpenCvImage.h" />
+    <ClInclude Include="source\OpenCvImageReader.h" />
+    <ClInclude Include="source\OpenCvImageWriter.h" />
+    <ClInclude Include="source\ProjectionProfile.h" />
+    <ClInclude Include="source\RegionMap.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="source\Run.h" />
+    <ClInclude Include="source\TiffImageReader.h" />
+    <ClInclude Include="source\TiffImageWriter.h" />
+    <ClInclude Include="..\libextra\source\Algorithm.h" />
+    <ClInclude Include="..\libextra\source\BaseException.h" />
+    <ClInclude Include="..\libextra\source\ExtraFileHelper.h" />
+    <ClInclude Include="..\libextra\source\ExtraMath.h" />
+    <ClInclude Include="..\libextra\source\ExtraString.h" />
+    <ClInclude Include="..\libextra\source\INI.h" />
+    <ClInclude Include="..\libextra\source\Parameter.h" />
+    <ClInclude Include="..\libextra\source\PointList.h" />
+    <ClInclude Include="..\libextra\source\ProgressMonitor.h" />
+    <ClInclude Include="..\libextra\source\RegionPoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libimage.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

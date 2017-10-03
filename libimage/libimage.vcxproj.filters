@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libextra">
+      <UniqueIdentifier>{a774713f-5de8-4266-b5b7-cd898e6fa396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\libextra">
+      <UniqueIdentifier>{8b6b213d-5b4a-49a2-87ed-3cbc980577ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\AdaptiveWienerFilter">
+      <UniqueIdentifier>{9bd8a4df-7141-4185-b360-eab1e4839141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AdaptiveWienerFilter">
+      <UniqueIdentifier>{d2bae4a3-87f7-450c-b95c-1e4a3f3925b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BiLevelImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnCompCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnectedComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnectedComponents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GreyScaleImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HiColorImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageTransformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\libimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LoColorImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OpenCvImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OpenCvImageReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OpenCvImageWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegionMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Run.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TiffImageReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TiffImageWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\Algorithm.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\BaseException.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\ExtraFileHelper.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\ExtraMath.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\ExtraString.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\INI.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\Parameter.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\PointList.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\ProgressMonitor.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libextra\source\RegionPoint.cpp">
+      <Filter>Source Files\libextra</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProjectionProfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AdaptiveBinariser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\source\AdaptiveWienerFilter-master\WienerFilter.cpp">
+      <Filter>Source Files\AdaptiveWienerFilter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\BiLevelImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnCompCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectedComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectedComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GreyScaleImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HiColorImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageTransformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LoColorImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OpenCvImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OpenCvImageReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OpenCvImageWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegionMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Run.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TiffImageReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TiffImageWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\Algorithm.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\BaseException.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\ExtraFileHelper.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\ExtraMath.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\ExtraString.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\INI.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\Parameter.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\PointList.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\ProgressMonitor.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libextra\source\RegionPoint.h">
+      <Filter>Header Files\libextra</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ProjectionProfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AdaptiveBinariser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\source\AdaptiveWienerFilter-master\WienerFilter.h">
+      <Filter>Header Files\AdaptiveWienerFilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libimage.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
